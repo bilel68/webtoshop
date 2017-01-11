@@ -12,7 +12,6 @@
   <div class="container-fluid">
 
     <div class="navbar-header">
-
       <a class="navbar-brand" href="#">Application</a>
     </div>
 
@@ -23,8 +22,10 @@
         <li><a href="/">Home</a></li>
         <li><a href="contact">Contact</a></li>
         <li><a href="magasin">Magasin</a></li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
+
         @if (Auth::check())
           <li><a href="logout"><b>Logout</b></a></li>
         @else
@@ -32,13 +33,13 @@
           <li><a href="register">Register</a></li>
           <li><a href="panier">Panier</a></li>
         @endif
+
         </ul>
-					 </div>
+			</div>
       </ul>
     </div>
   </div>
 </nav>
-
 
 </body>
 <div class="container">@yield('content')</div>

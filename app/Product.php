@@ -8,5 +8,9 @@ class Product extends Model
 {
     //
     public $timestamps = false;
-    
+    public function creator()
+    {
+      return $this->belongsTo('App\Creator');
+    }
+
 }
